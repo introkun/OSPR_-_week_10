@@ -1,22 +1,30 @@
 #include <iostream>
 using namespace std;
 
-void primeNumber(int a)
+Bool primeNumber(int a)
 {
 	for (int i = 2; i < a; i++)
 	{
 		if (a % i == 0)
 		{
-			cout << "chislo " << a << " ne javliaetsia prostim." << endl;
-			return;
+			return False;
 		}
 	}
-	cout << "chislo " << a << " javliaetsia prostim." << endl;
+	return True;
 }
 int main()
 {
 	int userEnter;
 	cout << "Vvedite chislo dlia proverki: ";
 	cin >> userEnter;
-	primeNumber(userEnter);
+	if (primeNumber(userEnter))
+	{
+		cout << "chislo " << a << " javliaetsia prostim." << endl;
+	}
+	else
+	{
+		cout << "chislo " << a << " ne javliaetsia prostim." << endl;
+	}
+	
+
 }
