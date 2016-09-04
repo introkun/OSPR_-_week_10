@@ -3,6 +3,7 @@ using namespace std;
 
 int maxNumber(int a, int b)
 {
+	// Нет проверки на равенство чисел
 	return (a > b) ? a : b;
 }
 int main()
